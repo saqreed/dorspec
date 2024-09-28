@@ -280,7 +280,7 @@ button:hover {
 #contact-form {
     width: 100%;
     padding: 50px 0;
-    background-color: #f7f7f7;
+    background-color: rgb(60, 0, 0);
     display: flex;
     justify-content: center;
 }
