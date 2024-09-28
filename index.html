@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дорспецмонтаж</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth; /* Плавная прокрутка */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#top" id="logo-link"><img src="images/1.png" alt="Логотип" class="logo"></a>
+            <ul>
+                <li><a href="#top">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#projects">Проекты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="top" class="banner">
+        <main class="content">
+            <h1>МЫ МОЖЕМ ВСЁ!</h1>
+            <p>И даже чуть больше</p>
+            <div>
+                <button type="button"><span></span>СВЯЗАТЬСЯ</button>
+                <button type="button" onclick="window.location.href='https://yandex.ru/maps/org/dorstroy/1039069381/?ll=45.994546%2C51.590312&z=13.1'"><span></span>НАЙТИ НА КАРТЕ</button>
+            </div>
+        </main>
+    </div>
+
+    <section id="about" class="back">
+        <div class="content1">
+            <h1>О нас</h1>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="reviews-content">
+            <h1>Отзывы</h1>
+            <div class="reviews-container">
+                <div class="review">
+                    <p>"Отличная работа! Мы были поражены качеством выполнения и вниманием к деталям. Рекомендую всем!"</p>
+                    <p class="reviewer">- Алексей И.</p>
+                </div>
+                <div class="review">
+                    <p>"Профессионализм команды был на высоте. Все сроки были соблюдены, а результат превзошел ожидания!"</p>
+                    <p class="reviewer">- Ирина К.</p>
+                </div>
+                <div class="review">
+                    <p>"Очень доволен работой. Быстро, качественно и без лишних затрат. Буду обращаться еще!"</p>
+                    <p class="reviewer">- Дмитрий С.</p>
+                </div>
+                <div class="review">
+                    <p>"Прекрасное обслуживание и отличные результаты. Команда действительно знает, что делает!"</p>
+                    <p class="reviewer">- Наталья В.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="projects-content">
+            <h1>Проекты</h1>
+            <div class="projects-container">
+                <div class="project">
+                    <h2>Строительство дороги в городе N</h2>
+                    <p>
+                        Этот проект включал строительство 5-километровой магистрали в сложных погодных условиях. 
+                        Команда успешно завершила работу на две недели раньше срока, используя новейшие технологии укладки асфальта.
+                    </p>
+                    <p><strong>Дата завершения:</strong> Июнь 2023</p>
+                    <p><strong>Бюджет:</strong> 50 млн рублей</p>
+                    <button onclick="window.location.href='https://example.com/project1'">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-form">
+        <div class="form-container">
+            <h1>Оставьте свою заявку</h1>
+            <form action="send_email.php" method="POST">
+                <label for="name">ФИО:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="work_type">Тип работ:</label>
+                <input type="text" id="work_type" name="work_type" required>
+    
+                <label for="phone">Контактный номер:</label>
+                <input type="text" id="phone" name="phone" required>
+    
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>    
+</body>
+</html>
